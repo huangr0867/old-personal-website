@@ -5,15 +5,22 @@ var nav = document.getElementById("dark-mode-nav");
 var footer = document.getElementById("dark-mode-footer");
 var night = document.getElementById("night-mode");
 var box1 = document.getElementsByClassName("box");
+var boxPublication = document.getElementsByClassName("box-publication");
+var nightIcon = document.getElementById("night-icon")
 
 if (today.getHours() > 17) {
     nightMode();
+    
 }
+
 
 function nightMode (){
         bg.style.backgroundColor = "#21252A";
         footer.style.backgroundColor = "#383c44";
         for (let box of box1) {
+            box.style.borderColor = "white"
+        }
+        for (let box of boxPublication) {
             box.style.borderColor = "white"
         }
         for (let word of words) {
@@ -31,6 +38,9 @@ function lightMode (){
     bg.style.backgroundColor = "white";
     footer.style.backgroundColor = "#fafafa"
     for (let box of box1) {
+        box.style.borderColor = "black"
+    }
+    for (let box of boxPublication) {
         box.style.borderColor = "black"
     }
     for (let word of words) {

@@ -15,11 +15,11 @@ body {
 }
 
 .left-link {
-    margin-left: 20%
+    margin-left: 28%
 }
 
 .right-link {
-    margin-right: 20%
+    margin-right: 22%
 }
 
 @font-face{
@@ -44,6 +44,7 @@ body {
 .subtitle-2{
     font-family: 'JetBrainsMono', Arial, sans-serif;
     font-size: medium;
+    color: #629755
 }
 
 .projects {
@@ -51,7 +52,7 @@ body {
 }
 
 .projects h1 {
-    margin-top: 10%;
+    margin-top: 8%;
     font-family: 'JetBrainsMono', Arial, sans-serif;
     font-weight: bold;
     font-size: 30px
@@ -82,3 +83,33 @@ body {
     padding: 2rem 2rem;
     vertical-align: middle;
 }
+
+.box-publication{
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+    text-align: left;
+
+}
+
+.box-publication h5{
+    font-family: 'JetBrainsMono', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.box-publication h6{
+    font-family: 'JetBrainsMono', Arial, sans-serif;
+    font-size: 12px
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
