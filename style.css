@@ -11,6 +11,15 @@ body {
     top: 0;
     z-index: 100;
     width: 100%;
+    font-family: 'JetBrainsMono', Arial, sans-serif;
+}
+
+.left-link {
+    margin-left: 20%
+}
+
+.right-link {
+    margin-right: 20%
 }
 
 @font-face{
@@ -30,6 +39,11 @@ body {
 
 .subtitle{
     font-family: 'JetBrainsMono', Arial, sans-serif;
+}
+
+.subtitle-2{
+    font-family: 'JetBrainsMono', Arial, sans-serif;
+    font-size: medium;
 }
 
 .projects {
