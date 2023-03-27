@@ -69,6 +69,7 @@ body {
 }
 
 .parent {
+    margin-top:0;
     padding: 1rem 1rem;
     text-align: center;
   }
@@ -112,4 +113,33 @@ body {
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-   }
+}
+
+.buttonWeb {
+    border-radius: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonPDF {
+    border-radius: 10px;
+    background-color: #f44c4c; /* Red */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
