@@ -63,11 +63,10 @@ body {
     background-color: #fafafa;
     padding-bottom: 2%;
     text-align: center;
+    font-family: 'JetBrainsMono', Arial, sans-serif;
 }
 
-.footer a:hover{
-    color: blue;
-}
+.footer a:hover{}
 
 .parent {
     margin-top:0;
@@ -84,6 +83,13 @@ body {
     border: 1px solid black;
     padding: 2rem 2rem;
     vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.box:hover {
+    box-shadow: 0px 3px 15px 0px #ccc;
+    border: 1px solid transparent;
 }
 
 .box-publication{
@@ -190,23 +196,24 @@ main.row {
     border-left: 2px solid #bababa;
 }
 
-.col .contents .box {
+.col .contents .box-exp {
+    border-radius: 20px;
     position: relative;
     padding: 20px;
     border: 1px solid black;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.4s;
     height: auto;
     width: 725px;
     margin-bottom: 20px
 }
 
-.col .contents .box:hover {
+.col .contents .box-exp:hover {
     box-shadow: 0px 3px 12px 0px #ccc;
     border: 1px solid transparent;
 }
 
-.col .contents .box::before {
+.col .contents .box-exp::before {
     content: '';
     position: absolute;
     width: 20px;
