@@ -32,7 +32,7 @@ body {
   }
 
 .name-title{
-    margin-top: 10%;
+    margin-top: 12%;
     font-family: 'JetBrainsMono', Arial, sans-serif;
     font-weight: bold;
 }
@@ -99,7 +99,8 @@ body {
 
 .box-publication h5{
     font-family: 'JetBrainsMono', Arial, sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
+    letter-spacing: 0.05px;
     font-size: 15px
 }
 
@@ -134,6 +135,34 @@ body {
     background-color: #f44c4c; /* Red */
     border: none;
     color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonGS {
+    border-radius: 10px;
+    background-color: #1281f8; /* Blue */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonRG {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white; /* Turquoise */
+    color: black;
     padding: 5px;
     text-align: center;
     text-decoration: none;
