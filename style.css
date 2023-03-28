@@ -6,6 +6,8 @@ body {
     background-color: white;
 }
 
+p { margin: 1.5px; }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -44,7 +46,7 @@ body {
 .subtitle-2{
     font-family: 'JetBrainsMono', Arial, sans-serif;
     font-size: medium;
-    color: #629755
+   
 }
 
 .projects {
@@ -107,6 +109,7 @@ img {
     padding: 2rem 2rem;
     vertical-align: middle;
     text-align: left;
+    transition: all 0.4s;
 
 }
 
@@ -137,16 +140,23 @@ img {
 .parent-container-exp {
     margin-top: 1%;
     display: grid;
-    grid-template-columns: 2.75fr 1fr;
+    grid-template-columns: 2.0fr 1fr;
     align-items: left ;
     justify-content: left;
 }
 
 .parent-container-exp h3{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
+.box-exp h4{
+    font-size: 15px;
+}
+
+.box-exp p{
+    font-size: 12px;
+}
 
 .buttonWeb {
     border-radius: 10px;
@@ -239,7 +249,7 @@ main.row {
     border: 1px solid transparent;
 }
 
-.col .contents .box-exp::before {
+.col .contents .box-exp.ri-hospital::before {
     content: "";
     position: absolute;
     top: 18px; /* move the image 10 pixels above the top of the box */
@@ -251,7 +261,41 @@ main.row {
     background: url("public/images/rhode-island-hospital.png") no-repeat 0 0;
     background-size: 100%;
     border-radius: 50%;
-    border: 2px solid #6d6969;
+    border: 2px solid #bababa;
+}
+
+.col .contents .box-exp.crawford::before {
+    content: "";
+    position: absolute;
+    top: 18px; /* move the image 10 pixels above the top of the box */
+    left: -92px; /* move the image 30 pixels to the left of the box */
+    z-index: 1; /* ensure that the image appears above the box */
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("public/images/brown-logo.png") no-repeat 0 0;
+    background-size: 280%;
+    background-position-x: -50px;
+    background-position-y: -14px;
+    border-radius: 50%;
+    border: 2px solid #bababa;
+}
+
+.col .contents .box-exp.sdsu::before {
+    content: "";
+    position: absolute;
+    top: 18px; /* move the image 10 pixels above the top of the box */
+    left: -92px; /* move the image 30 pixels to the left of the box */
+    z-index: 1; /* ensure that the image appears above the box */
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("public/images/sdsu-logo.png") no-repeat 0 0;
+    background-size: 230%;
+    background-position-x: -3.5px;
+    background-position-y: -10px;
+    border-radius: 50%;
+    border: 2px solid #bababa;
 }
 
 .col .contents::before,

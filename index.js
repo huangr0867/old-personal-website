@@ -38,7 +38,14 @@ function nightMode (){
               }, false);
         }
         for (let box of boxPublication) {
-            box.style.borderColor = "white"
+            box.style.borderColor = "white";
+            box.style.borderColor = "white";
+            box.addEventListener("mouseenter", function( event ) {   
+                event.target.style.borderColor = "transparent";
+              }, false);
+              box.addEventListener("mouseleave", function( event ) {   
+                event.target.style.borderColor = "white";
+              }, false);
         }
         for (let word of words) {
             word.style.color = "white";
@@ -77,6 +84,12 @@ function lightMode (){
     }
     for (let box of boxPublication) {
         box.style.borderColor = "black"
+        box.addEventListener("mouseenter", function( event ) {   
+            event.target.style.borderColor = "transparent";
+          }, false);
+          box.addEventListener("mouseleave", function( event ) {   
+            event.target.style.borderColor = "black";
+          }, false);
     }
     for (let word of words) {
         word.style.color = "black";
