@@ -58,15 +58,21 @@ body {
     font-size: 30px
 }
 
+img {
+    width: 75px;
+    height: 75px;
+}
+
 .footer {
     padding-top: 2%;
     background-color: #fafafa;
     padding-bottom: 2%;
     text-align: center;
     font-family: 'JetBrainsMono', Arial, sans-serif;
+    color: black;
 }
 
-.footer a:hover{}
+/* .footer a:hover{} */
 
 .parent {
     margin-top:0;
@@ -122,6 +128,20 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
 }
+
+.parent-container-exp {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 2.75fr 1fr;
+    align-items: left ;
+    justify-content: left;
+}
+
+.parent-container-exp h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+
 
 .buttonWeb {
     border-radius: 10px;
@@ -181,7 +201,7 @@ body {
 
 .container-experience {
     width: 100%;
-    padding: 35px 5%;
+    padding: 38px 5%;
 
 }
 
@@ -192,8 +212,9 @@ main.row {
 }
 
 .col .contents {
-    padding: 0px 30px;
+    padding: 0px 60px;
     border-left: 2px solid #bababa;
+    top: 500px;
 }
 
 .col .contents .box-exp {
@@ -204,29 +225,54 @@ main.row {
     /* cursor: pointer; */
     transition: all 0.4s;
     height: auto;
-    width: 725px;
+    width: 715px;
     margin-bottom: 20px
 }
 
 .col .contents .box-exp:hover {
-    box-shadow: 0px 3px 12px 0px #ccc;
+    box-shadow: 0px 2px 12px 0px #ccc;
     border: 1px solid transparent;
 }
 
 .col .contents .box-exp::before {
-    content: '';
+    content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
+    top: 18px; /* move the image 10 pixels above the top of the box */
+    left: -92px; /* move the image 30 pixels to the left of the box */
+    z-index: 1; /* ensure that the image appears above the box */
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url("public/images/rhode-island-hospital.png") no-repeat 0 0;
+    background-size: 100%;
     border-radius: 50%;
-    right: calc(100% + 22px);
-    top: 100;
-    background-color: black;
-    border: 2px solid white;
+    border: 2px solid #6d6969;
 }
 
+.col .contents::before,
+.col .contents::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bababa;
+    position: absolute;
+}
+
+.col .contents::before {
+    left: 11px;
+    top: -5px;
+}
+
+.col .contents::after {
+    left: 11px;
+    bottom: 15px;
+}
+
+
 @media(max-width: 1600px){
-    .col .contents .box {
+    .col .contents .box-exp {
         width: 375px;
     }
 }
