@@ -10,17 +10,37 @@ var boxEXP = document.getElementsByClassName("box-exp");
 var nightIcon = document.getElementById("night-icon");
 var linkBox = document.getElementsByClassName("link");
 var boxLabel = document.getElementsByClassName("box-label");
+var boxDoc = document.getElementById("box-doc");
 
 if (today.getHours() > 17) {
     nightMode();
 
 }
 
+boxDoc.addEventListener("mouseenter", function( event ) {   
+    for (let label of boxLabel) {
+        label.style.color = "white";
+        label.style.width = "100px";
+        label.style.height = "30px";
+        label.style.fontSize = "15px";
+    }
+  }, false);
+  boxDoc.addEventListener("mouseleave", function( event ) {   
+    for (let label of boxLabel) {
+        label.style.color = "transparent";
+        label.style.width = "0px";
+        label.style.height = "0px";
+        label.style.fontSize = "0px";
+    }
+  }, false);
+
+
 
 function nightMode (){
         bg.style.backgroundColor = "#21252A";
         footer.style.backgroundColor = "#383c44";
         footer.style.color = "white";
+
         for (let box of linkBox){
             box.style.color = "white";
         }
@@ -28,19 +48,9 @@ function nightMode (){
             box.style.borderColor = "white";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
-                for (let label of boxLabel) {
-                    label.style.width = "100px";
-                    label.style.height = "30px";
-                    label.style.fontSize = "15px";
-                }
               }, false);
               box.addEventListener("mouseleave", function( event ) {   
                 event.target.style.borderColor = "white";
-                for (let label of boxLabel) {
-                    label.style.width = "0px";
-                    label.style.height = "0px";
-                    label.style.fontSize = "0px";
-                }
               }, false);
         }
         for (let box of boxEXP) {
