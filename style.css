@@ -46,6 +46,7 @@ p { margin: 1.5px; }
     transition: all 1.25s;
 }
 
+
 .link
 {
    color:black;
@@ -139,8 +140,12 @@ img {
 
 @media(max-width: 650px){
     .box{
-        width: 350px;
+        width: 330px;
     }
+    .box-label {
+        left: 180px;
+    }
+    
 }
 
 .box:hover {
@@ -370,7 +375,19 @@ main.row {
 
 @media(max-width: 1600px){
     .col .contents .box-exp {
-        width: 325px;
+        width: 500px;
+    }
+}
+
+@media(max-width: 1200px){
+    .col .contents .box-exp {
+        width: 380px;
+    }
+}
+
+@media(max-width: 600px){
+    .col .contents .box-exp {
+        width: 300px;
     }
 }
 
