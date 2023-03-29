@@ -17,11 +17,33 @@ p { margin: 1.5px; }
 }
 
 .parent .box.link {
-    
-    background: url("public/images/bitmap.png") no-repeat 0 0;
+    background: url("public/images/bitmap2.png") no-repeat 0 0;
     background-size: 50%;
     background-position-x: center;
     background-position-y: 100px;
+    transition: all 1s;
+}
+
+.parent .box.link:hover {
+    background-size: 51%;
+    background-position-x: 10px;
+
+}
+
+.box-label {
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: #78ccdc;
+    width: 0px;
+    height: 0px;
+    text-align:center;
+    padding-top: 3px;
+    font-size: 0px;
+    position: relative;
+    left: 220px;
+    top: 75px;
+    transition: all 1.25s;
 }
 
 .link

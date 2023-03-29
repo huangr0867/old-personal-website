@@ -9,6 +9,7 @@ var boxPublication = document.getElementsByClassName("box-publication");
 var boxEXP = document.getElementsByClassName("box-exp");
 var nightIcon = document.getElementById("night-icon");
 var linkBox = document.getElementsByClassName("link");
+var boxLabel = document.getElementsByClassName("box-label");
 
 if (today.getHours() > 17) {
     nightMode();
@@ -27,9 +28,19 @@ function nightMode (){
             box.style.borderColor = "white";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
+                for (let label of boxLabel) {
+                    label.style.width = "100px";
+                    label.style.height = "30px";
+                    label.style.fontSize = "15px";
+                }
               }, false);
               box.addEventListener("mouseleave", function( event ) {   
                 event.target.style.borderColor = "white";
+                for (let label of boxLabel) {
+                    label.style.width = "0px";
+                    label.style.height = "0px";
+                    label.style.fontSize = "0px";
+                }
               }, false);
         }
         for (let box of boxEXP) {
