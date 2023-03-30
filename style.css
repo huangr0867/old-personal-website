@@ -387,7 +387,20 @@ main.row {
 
 @media(max-width: 600px){
     .col .contents .box-exp {
-        width: 300px;
+        width: 250px;
+    }
+
+    .parent-container-exp h3{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .box-exp h4{
+        font-size: 12px;
+    }
+    
+    .box-exp p{
+        font-size: 10px;
     }
 }
 
