@@ -402,6 +402,11 @@ main.row {
     .box-exp p{
         font-size: 10px;
     }
+
+    .name-title{
+        margin-top: 15%;
+    }
+
 }
 
 .icon-top {
