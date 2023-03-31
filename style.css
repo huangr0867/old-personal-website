@@ -387,7 +387,7 @@ main.row {
 
 @media(max-width: 600px){
     .col .contents .box-exp {
-        width: 250px;
+        width: 260px;
     }
 
     .parent-container-exp h3{
