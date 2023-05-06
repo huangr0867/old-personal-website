@@ -46,6 +46,7 @@ function nightMode (){
         }
         for (let box of box1) {
             // box.style.borderColor = "white";
+            box.style.boxShadow = "none";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
               }, false);
@@ -93,12 +94,15 @@ function lightMode (){
         box.style.color = "black";
     }
     for (let box of box1) {
-        // box.style.borderColor = "black";
+        box.style.borderColor = "#ccc";
+        box.style.boxShadow = "0px 1px 8px 0px #ccc";
         box.addEventListener("mouseenter", function( event ) {   
             event.target.style.borderColor = "transparent";
+            event.target.style.backgroundColor = "rgba(255, 255, 255, 0.972)";
           }, false);
           box.addEventListener("mouseleave", function( event ) {   
-            event.target.style.borderColor = "black";
+            event.target.style.borderColor = "#ccc";
+            event.target.style.backgroundColor = "white";
           }, false);
     }
     for (let box of boxEXP) {
