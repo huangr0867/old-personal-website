@@ -40,6 +40,7 @@ function nightMode (){
         bg.style.backgroundColor = "#21252A";
         footer.style.backgroundColor = "#383c44";
         footer.style.color = "white";
+        nav.style.backgroundColor = "#21252A";
 
         for (let box of linkBox){
             box.style.color = "white";
@@ -82,9 +83,9 @@ function nightMode (){
             word.style.color = "white";
         }
         nav.classList.remove("navbar-light");
-        nav.classList.remove("bg-light");
+        // nav.classList.remove("bg-light");
         nav.classList.add("navbar-dark");
-        nav.classList.add("bg-dark");
+        // nav.classList.add("bg-dark");
         night.onclick=lightMode;
 
 
@@ -95,6 +96,8 @@ function lightMode (){
     bg.style.backgroundColor = "white";
     footer.style.backgroundColor = "#fafafa";
     footer.style.color = "black";
+    nav.style.backgroundColor = "#FFFFFF";
+
     for (let box of linkBox){
         box.style.color = "black";
     }
@@ -134,9 +137,10 @@ function lightMode (){
     for (let word of words) {
         word.style.color = "black";
     }
+
     nav.classList.remove("navbar-dark");
-    nav.classList.remove("bg-dark");
+    // nav.classList.remove("bg-light");
     nav.classList.add("navbar-light");
-    nav.classList.add("bg-light");
+    
     night.onclick=nightMode;
 }
