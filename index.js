@@ -45,13 +45,18 @@ function nightMode (){
             box.style.color = "white";
         }
         for (let box of box1) {
-            // box.style.borderColor = "white";
+            box.style.transition = "none"
+            box.style.backgroundColor = "#272b30";
+            box.style.borderColor = "#35383c";
             box.style.boxShadow = "none";
-            box.addEventListener("mouseenter", function( event ) {   
-                event.target.style.borderColor = "transparent";
+            box.addEventListener("mouseenter", function( event ) {
+                box.style.transition = "border-color 0.4s ease-in-out, background-size 1s, background-position-x 1s, background-position-y 1s";
+                event.target.style.borderColor = "#8b8b8b";
+                event.target.style.backgroundColor = "#2c3035";
               }, false);
               box.addEventListener("mouseleave", function( event ) {   
-                event.target.style.borderColor = "white";
+                event.target.style.borderColor = "#35383c";
+                event.target.style.backgroundColor = "#272b30";
               }, false);
         }
         for (let box of boxEXP) {
@@ -94,6 +99,8 @@ function lightMode (){
         box.style.color = "black";
     }
     for (let box of box1) {
+        box.style.transition = "none"
+        box.style.backgroundColor = "white";
         box.style.borderColor = "#ccc";
         box.style.boxShadow = "0px 1px 8px 0px #ccc";
         box.addEventListener("mouseenter", function( event ) {   
@@ -107,7 +114,8 @@ function lightMode (){
     }
     for (let box of boxEXP) {
         // box.style.borderColor = "black";
-        box.addEventListener("mouseenter", function( event ) {   
+        box.addEventListener("mouseenter", function( event ) {  
+          box.style.transition = "border-color 0.4s ease-in-out, background-size 1s, background-position-x 1s, background-position-y 1s"; 
             event.target.style.borderColor = "transparent";
           }, false);
           box.addEventListener("mouseleave", function( event ) {   

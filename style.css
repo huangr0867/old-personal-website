@@ -21,7 +21,7 @@ p { margin: 1.5px; }
     background-size: 50%;
     background-position-x: center;
     background-position-y: 100px;
-    transition: all 1s;
+    transition: background-size 1s, background-position-x 1s, background-position-y 1s;
 }
 
 .parent .box.link:hover {
@@ -134,9 +134,9 @@ img {
     padding: 2rem 2rem;
     vertical-align: middle;
     cursor: pointer;
-    transition: all 0.4s;
     box-shadow: 0px 1px 8px 0px #ccc;
-    border: 1px solid #ccc;
+    border: 1.5px solid #ccc;
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
 .box:hover {
