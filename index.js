@@ -45,7 +45,7 @@ function nightMode (){
             box.style.color = "white";
         }
         for (let box of box1) {
-            box.style.borderColor = "white";
+            // box.style.borderColor = "white";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
               }, false);
@@ -54,7 +54,7 @@ function nightMode (){
               }, false);
         }
         for (let box of boxEXP) {
-            box.style.borderColor = "white";
+            // box.style.borderColor = "white";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
               }, false);
@@ -63,8 +63,8 @@ function nightMode (){
               }, false);
         }
         for (let box of boxPublication) {
-            box.style.borderColor = "white";
-            box.style.borderColor = "white";
+            // box.style.borderColor = "white";
+            // box.style.borderColor = "white";
             box.addEventListener("mouseenter", function( event ) {   
                 event.target.style.borderColor = "transparent";
               }, false);
@@ -93,7 +93,7 @@ function lightMode (){
         box.style.color = "black";
     }
     for (let box of box1) {
-        box.style.borderColor = "black";
+        // box.style.borderColor = "black";
         box.addEventListener("mouseenter", function( event ) {   
             event.target.style.borderColor = "transparent";
           }, false);
@@ -102,7 +102,7 @@ function lightMode (){
           }, false);
     }
     for (let box of boxEXP) {
-        box.style.borderColor = "black";
+        // box.style.borderColor = "black";
         box.addEventListener("mouseenter", function( event ) {   
             event.target.style.borderColor = "transparent";
           }, false);
@@ -111,7 +111,7 @@ function lightMode (){
           }, false);
     }
     for (let box of boxPublication) {
-        box.style.borderColor = "black"
+        // box.style.borderColor = "black"
         box.addEventListener("mouseenter", function( event ) {   
             event.target.style.borderColor = "transparent";
           }, false);
