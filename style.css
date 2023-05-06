@@ -24,11 +24,11 @@ p { margin: 1.5px; }
     transition: background-size 1s, background-position-x 1s, background-position-y 1s;
 }
 
-.parent .box.link:hover {
+/* .parent .box.link:hover {
     background-size: 51%;
     background-position-x: 10px;
 
-}
+} */
 
 .box-label {
     border-radius: 20px;
