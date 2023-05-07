@@ -385,9 +385,9 @@ main.row {
 }
 
 @media(max-width: 600px){
-    .box{
+    /* .box{
         width: 330px;
-    }
+    } */
     .box-label {
         left: 180px;
     }
