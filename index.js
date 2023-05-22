@@ -14,7 +14,8 @@ var boxDoc = document.getElementById("box-doc");
 
 if (today.getHours() > 17) {
     nightMode();
-
+} else {
+  lightMode();
 }
 
 boxDoc.addEventListener("mouseenter", function( event ) {   
