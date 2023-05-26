@@ -57,6 +57,7 @@ function nightMode (){
                 event.target.style.backgroundColor = "#2c3035";
               }, false);
               box.addEventListener("mouseleave", function( event ) {   
+                box.style.transition = "border-color 0.4s ease-in-out, background-size 1s, background-position-x 1s, background-position-y 1s";
                 event.target.style.borderColor = "#35383c";
                 event.target.style.backgroundColor = "#272b30";
               }, false);
@@ -108,6 +109,7 @@ function lightMode (){
         box.style.borderColor = "#ccc";
         box.style.boxShadow = "0px 1px 8px 0px #ccc";
         box.addEventListener("mouseenter", function( event ) {   
+            box.style.transition = "border-color 0.4s ease-in-out, background-size 1s, background-position-x 1s, background-position-y 1s"; 
             event.target.style.borderColor = "transparent";
             event.target.style.backgroundColor = "rgba(255, 255, 255, 0.972)";
           }, false);
@@ -119,7 +121,6 @@ function lightMode (){
     for (let box of boxEXP) {
         // box.style.borderColor = "black";
         box.addEventListener("mouseenter", function( event ) {  
-          box.style.transition = "border-color 0.4s ease-in-out, background-size 1s, background-position-x 1s, background-position-y 1s"; 
             event.target.style.borderColor = "transparent";
           }, false);
           box.addEventListener("mouseleave", function( event ) {   
