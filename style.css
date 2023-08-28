@@ -141,7 +141,7 @@ img {
 .box{
     border-radius: 20px;
     margin-bottom: 1.5%;
-    width: 271px;
+    width: 30%;
     height: 220px;
     display: inline-block;
     padding: 2rem 2rem;
@@ -392,7 +392,7 @@ main.row {
         width: 500px;
     }
     .box {
-        width: 220px;
+        /* width: 220px; */
         height: 200px;
     }
     .left-link {
@@ -404,13 +404,13 @@ main.row {
     }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1225px){
     .col .contents .box-exp {
         width: 380px;
     }
     .box {
-        width: 200px;
-        height: 175px;
+        width: 45%;
+        height: 200px;
     }
 }
 
@@ -452,7 +452,7 @@ main.row {
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 1000px){
     .box{
         width: 330px;
         height: 275px;
