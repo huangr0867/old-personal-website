@@ -12,9 +12,11 @@ var linkBox = document.getElementsByClassName("link");
 var boxLabel = document.getElementsByClassName("box-label");
 var boxDoc = document.getElementById("box-doc");
 
-if (today.getHours() > 17) {
+var mode = localStorage.getItem("mode");
+
+if ((today.getHours() > 17) && (mode !== "light")) {
     nightMode();
-} else {
+} else if ((today.getHours() <= 17) && (mode !== "dark")) {
   lightMode();
 }
 
@@ -38,6 +40,7 @@ boxDoc.addEventListener("mouseenter", function( event ) {
 
 
 function nightMode (){
+        localStorage.setItem("mode", "dark");
         bg.style.backgroundColor = "#21252A";
         footer.style.backgroundColor = "#383c44";
         footer.style.color = "white";
@@ -95,6 +98,7 @@ function nightMode (){
 }
 
 function lightMode (){
+  localStorage.setItem("mode", "light");
     bg.style.backgroundColor = "white";
     footer.style.backgroundColor = "#fafafa";
     footer.style.color = "black";

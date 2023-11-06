@@ -131,7 +131,16 @@
 
 
     <!-- Custom JS -->
-    <script src="research.js"></script>
+    <script src="index.js"></script>
+    <script>
+        // Check and set the mode when the page loads
+        console.log(localStorage.getItem("mode"))
+        if (localStorage.getItem("mode") === "dark") {
+          nightMode();
+        } else {
+          lightMode();
+        }
+      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
